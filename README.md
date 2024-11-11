@@ -3,8 +3,8 @@ This program pipes from one txt file (file1) to another txt file (file2). It per
 
 **Arguments**: ./pipex file1 command1 command2 file2 
 
-Specific Example: ./pipex file1.txt ls "wc -l"  file2.txt  
--> this'll list the number of lines in a directory and then count those lines and write that number into the file2.txt.  
+Specific Example: ./pipex file1.txt cat "wc -l"  file2.txt  
+-> this'll display (cat) the contents of a file (file1.txt) and then count those lines (wc -l) and write that number into a 2nd file (file2.txt).  
 
-**So what's interesting about this project**:  
-This program can use system commands (like ls, cat, wc etc) making it useful for using ALREADY made programs. This is done by creating Child processes.
+**So what's the point of this project**:  
+This program can use system commands (like ls, cat, wc etc) making it useful for using SYSTEM programs. This is achieved by creating Child processes.
